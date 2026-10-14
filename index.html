@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#6d5dfc" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Память+" />
+    <title>Память+</title>
+    <script>
+      // Тема и размер текста до первой отрисовки (копию пишет src/platform/appearance.ts).
+      try {
+        var a = JSON.parse(localStorage.getItem('pp-appearance') || '{}');
+        var dark = a.theme === 'dark' || (a.theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+        var pct = { sm: 90, lg: 115, xl: 130 }[a.fontScale];
+        if (pct) document.documentElement.style.fontSize = pct + '%';
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-DL7dAsLB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B0pGe4kT.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+  </body>
+</html>
