@@ -16,12 +16,12 @@
         var a = JSON.parse(localStorage.getItem('pp-appearance') || '{}');
         var dark = a.theme === 'dark' || (a.theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
         if (dark) document.documentElement.classList.add('dark');
-        var pct = { sm: 90, lg: 115, xl: 130 }[a.fontScale];
-        if (pct) document.documentElement.style.fontSize = pct + '%';
+        var pct = { sm: 90, md: 100, lg: 115, xl: 130 }[a.fontScale] || 100;
+        document.documentElement.style.fontSize = 'min(' + pct + '%, 5.34vw)';
       } catch (e) {}
     </script>
-    <script type="module" crossorigin src="./assets/index-DL7dAsLB.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-B0pGe4kT.css">
+    <script type="module" crossorigin src="./assets/index-CdLUz6Pr.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B3y34g1n.css">
   <link rel="manifest" href="./manifest.webmanifest"></head>
   <body class="bg-slate-50">
     <div id="root"></div>
