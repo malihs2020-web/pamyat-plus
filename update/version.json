@@ -1,6 +1,7 @@
 {
-  "version": "0.2.1",
-  "native": "0.2.0",
-  "bundle": "update/bundle-0.2.1.zip",
+  "version": "0.2.2",
+  "native": "0.2.2",
+  "bundle": "update/bundle-0.2.2.zip",
+  "checksum": "14d0dbadd6e42d1303c9859644d83c4876a4d9520ebff7895e5b111c0c7892e3",
   "apk": "update/pamyat-plus.apk"
 }
