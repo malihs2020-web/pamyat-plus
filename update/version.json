@@ -1,8 +1,8 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "native": "0.2.3",
-  "bundle": "update/bundle-0.3.0.zip",
-  "checksum": "0a5cd9793ea42609de1085290c99f15b01506aecdb08085659ebe38f2a8eabaf",
+  "bundle": "update/bundle-0.3.1.zip",
+  "checksum": "2cdd2f27bc9bf80157e564eff8785515b2695cf3a22f517453f678d0ae9df75d",
   "apk": "update/pamyat-plus.apk",
   "apkChecksum": "101c4e99681ddabe375aada06d2f8b82ddba502815507204e5132fbae9bb101d"
 }
